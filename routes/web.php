@@ -11,26 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+Route::get('/', 'PagesController@index')->name('index');
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
+Route::get('about', 'PagesController@about')->name('about');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::get('contact', 'PagesController@contact')->name('contact');
 
-Route::get('/register', function () {
-    return view('pages.register');
-});
+Route::post('contact', 'PagesController@store')->name('contact.store');
 
-Route::get('/login', function () {
-    return view('pages.login');
-});
-
-Route::post('/contact', function () {
-    return view('pages.thankyou');
-});
