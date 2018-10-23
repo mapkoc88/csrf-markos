@@ -9,8 +9,8 @@
             <form action=" {{ route('contact.store') }}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input name="name" type="name" class="form-control" id="name" placeholder="Name and Last Name">
+                    <label for="name">Name</label>
+                    <input name="name" type="name" class="form-control" id="name" placeholder="Name">
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>

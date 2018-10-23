@@ -19,7 +19,7 @@ class PagesController extends Controller
 
         $name = $request->name;
 
-        //return redirect()->route('thankyou',['name' => $name]);
+        return redirect()->route('thanks',['name' => $name]);
     }
     function thanks($name){
 
